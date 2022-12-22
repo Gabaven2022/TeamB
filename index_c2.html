@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>道の駅・物産館イメージ 無料ホームページテンプレート tp_bussan2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="道の駅"></a></h1>
+</header>
+
+<div id="container">
+
+<nav id="header-menu">
+<ul>
+<li><a href="info.html">施設のご案内<i class="fas fa-info-circle"></i></a></li>
+<li><a href="shopping.html">お買い物<i class="fas fa-shopping-basket"></i></a></li>
+<li><a href="event.html">イベント<i class="far fa-calendar-alt"></i></a></li>
+<li><a href="access.html">アクセス<i class="fas fa-map-marker-alt"></i></a></li>
+</ul>
+</nav>
+
+<main>
+
+<div class="c2">
+
+<div class="main">
+
+<section>
+
+<h2>2カラムレイアウト</h2>
+
+<h3>2カラムで使う事もできます</h3>
+
+<div class="list-container">
+
+<div class="list">
+<figure><img src="images/sample1.jpg" alt=""></figure>
+<div class="text">
+<h4>Sample Title</h4>
+<p>ここに説明を入れます。サンプルテキスト。</p>
+</div>
+</div>
+
+<div class="list">
+<figure><img src="images/sample1.jpg" alt=""></figure>
+<div class="text">
+<h4>Sample Title</h4>
+<p>ここに説明を入れます。サンプルテキスト。</p>
+</div>
+</div>
+
+<div class="list">
+<figure><img src="images/sample1.jpg" alt=""></figure>
+<div class="text">
+<h4>Sample Title</h4>
+<p>ここに説明を入れます。サンプルテキスト。</p>
+</div>
+</div>
+
+<div class="list">
+<figure><img src="images/sample1.jpg" alt=""></figure>
+<div class="text">
+<h4>Sample Title</h4>
+<p>ここに説明を入れます。サンプルテキスト。</p>
+</div>
+</div>
+
+</div>
+<!--/.list-container-->
+
+<h3>２カラムを使う際の解説</h3>
+<p>まず、２カラムにしたいブロックの外枠として、<span class="color-check">c2</span>ブロックを作ります。<br>
+その中に、<span class="color-check">main</span>ブロックと<span class="color-check">sub</span>ブロックを入れて下さい。<br>
+ここのmainブロックというのは、classでつけた名前で、main要素とは異なります。（.mainとmainの違い。）</p>
+
+<pre class="look" style="margin-left: 20px;">&lt;div class=&quot;<span class="color-check">c2</span>&quot;&gt;<br>
+	&lt;div class=&quot;<span class="color-check">main</span>&quot;&gt;
+	※ここにメインコンテンツの内容を入れます。
+	&lt;/div&gt;<br>
+	&lt;div class=&quot;<span class="color-check">sub</span>&quot;&gt;
+	※ここにサブコンテンツの内容を入れます。
+	&lt;/div&gt;<br>
+&lt;/div&gt;</pre>
+
+<h3>画面幅が900px未満の小さな端末での閲覧時は</h3>
+<p>サブメニューが上で、メインコンテンツがその下に配置されます。順番を逆にしたい場合（メインコンテンツを上にしたい場合）、cssフォルダのstyle.cssの「.main」と「.sub」にある「order」の数字を入れ替えて下さい。<br>
+入れ替えた場合、大きな端末でも順番(左右ブロック)が入れ替わってしまうので、大きな端末だけは今のままがいいなら、style.cssの下の方にある、<br>
+<span class="look">@media screen and (min-width:900px) {</span><br>
+の中にある、<br>
+「.main」に「order: 2;」を、「.sub」に「order: 1;」を新規で追加して下さい。</p>
+
+<h3>小さな端末時にサブブロックなど任意の情報を非表示にして、開閉ブロック内に表示させる方法</h3>
+<p>現状のままだと、900px未満で見た際にサブメニューが結構場所をとるので、それを非表示にして代わりに開閉ブロック内に表示させる方法の紹介です。<br>
+既存のサブメニューをそのまま開閉ブロック内に表示させる事はできないので、手作業で別途用意します。</p>
+<p>まず、html側の開閉ブロック内にある、<br>
+<span class="look">&lt;div class=&quot;sh&quot;&gt;<br>
+・・・<br>
+&lt;/div&gt;</span><br>
+の中に、小さな端末時にのみ表示させたいサブブロック情報などをあらかじめ入力しておきます。</p>
+<p>次に、小さな端末時で非表示にしたいサブブロック情報などに、<br>
+<span class="look">class=&quot;pc&quot;</span><br>
+と指定しておきましょう。<br>
+既にclassばある場合は半角スペースで区切って追加します。<br>
+例：<span class="look">&lt;div class=&quot;sub <span class="color-check">pc</span>&quot;&gt;</span></p>
+<p>注意点ですが、sh内に追加する際、&lt;div class=&quot;sub&quot;&gt;ごと入れてしまうとレイアウトが崩れる可能性があるので、subは含めず中身だけ入れて下さい。</p>
+
+</section>
+
+</div>
+<!--/.main-->
+
+<div class="sub">
+
+<h3>Menu</h3>
+<ul class="submenu">
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+
+<h3>Menu</h3>
+<ul class="submenu">
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+
+</div>
+<!--/.sub-->
+
+</div>
+<!--/.c2-->
+
+</main>
+
+<div id="footermenu">
+<ul>
+<li class="title">メニュー</li>
+<li><a href="index.html">ホーム</a></li>
+<li><a href="company.html">運営会社</a></li>
+<li><a href="info.html">施設のご案内</a></li>
+<li><a href="shopping.html">お買い物</a></li>
+<li><a href="event.html">イベント</a></li>
+<li><a href="access.html">アクセス</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+</div>
+<!--/#footermenu-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">道の駅</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">ホーム</a></li>
+<li><a href="info.html">施設のご案内</a></li>
+<li><a href="shopping.html">お買い物</a></li>
+<li><a href="event.html">イベント</a></li>
+<li><a href="access.html">アクセス</a></li>
+</ul>
+</nav>
+
+<p class="btn"><a href="contact.html">お問い合わせ</a></p>
+
+<div class="sh">
+<p>※900px未満のメニュー開閉時にのみ表示させたい情報があればここ（shボックスの中）に入れて下さい。<br>
+サンプルテキスト。サンプルテキスト。<br>
+サンプルテキスト。サンプルテキスト。<br>
+サンプルテキスト。サンプルテキスト。</p>
+</div>
+<!--/.sh-->
+
+</div>
+<!--/#menubar-->
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<div>
+<span></span><span></span><span></span>
+</div>
+<p>MENU</p>
+</div>
+
+</div>
+<!--/#container-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+</body>
+</html>
