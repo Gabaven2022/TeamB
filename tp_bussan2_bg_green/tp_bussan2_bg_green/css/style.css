@@ -35,7 +35,7 @@ body {
   font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ",
     Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; /*フォント種類*/
   -webkit-text-size-adjust: none;
-  background: #4d9c08; /*背景色*/
+  background: #759d52; /*背景色*/
   color: #fff; /*全体の文字色*/
   line-height: 2; /*行間*/
   overflow-x: hidden;
@@ -127,7 +127,7 @@ main > article,
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-  background: #418307; /*背景色*/
+  background: #436a22; /*背景色*/
   position: relative;
 }
 
@@ -401,6 +401,7 @@ main p + p {
   display: flex; /*flexボックスを使う指定*/
   justify-content: space-between; /*並びかたの種類の指定*/
   align-items: flex-start; /*垂直揃えの指定。上に配置されるように。*/
+  text-align: center; /*テキストを中央に*/
 }
 
 /*ボックス内のリンクテキスト設定*/
@@ -849,7 +850,14 @@ p.btn {
   color: #e30000 !important;
 }
 .c {
-  text-align: center !important;
+  text-align: left !important;
+}
+.dai {
+  border-bottom:solid;
+  text-align: left !important;
+}
+.u {
+  text-align: right !important;
 }
 .ws {
   width: 95%;
