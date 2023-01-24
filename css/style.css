@@ -35,7 +35,7 @@ body {
   font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ",
     Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; /*フォント種類*/
   -webkit-text-size-adjust: none;
-  background: #4d9c08; /*背景色*/
+  background: #759d52; /*背景色*/
   color: #fff; /*全体の文字色*/
   line-height: 2; /*行間*/
   overflow-x: hidden;
@@ -85,7 +85,7 @@ ol {
 /*リンクテキスト全般の設定
 ---------------------------------------------------------------------------*/
 a {
-  color: #fff; /*文字色*/
+  color: rgb(7, 7, 7); /*文字色*/
   transition: 0.3s;
 }
 
@@ -127,7 +127,7 @@ main > article,
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-  background: #418307; /*背景色*/
+  background: #436a22; /*背景色*/
   position: relative;
 }
 
@@ -203,7 +203,7 @@ body:not(.home) header #logo img {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 1.0em; /*文字サイズを親要素の70%にする*/
+  font-size: 0.7em; /*文字サイズを親要素の70%にする*/
   position: absolute;
   z-index: 1;
   right: 0px; /*ヘッダーに対して、右からの配置場所の指定*/
@@ -259,7 +259,7 @@ body:not(.home) header #logo img {
   width: 100%; /*ブロックの幅。100%にすれば画面いっぱいに広がります。*/
   height: 100%; /*ブロックの高さ*/
   padding: 120px 20px 20px; /*上、左右、下へのブロック内の余白*/
-  background: rgb(0, 0, 0); /*背景色*/
+  background: #fff; /*背景色*/
   text-align: center; /*テキストを中央に*/
   animation: animation1 0.2s both; /*animation.cssの、animation1を実行する。0.2sは0.2秒の事。*/
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /*ボックスの影。右へ、下へ、ぼかし幅の順番。0,0,0は黒の事で0.2は色が20%出た状態。*/
@@ -401,6 +401,7 @@ main p + p {
   display: flex; /*flexボックスを使う指定*/
   justify-content: space-between; /*並びかたの種類の指定*/
   align-items: flex-start; /*垂直揃えの指定。上に配置されるように。*/
+  text-align: center; /*テキストを中央に*/
 }
 
 /*ボックス内のリンクテキスト設定*/
@@ -849,7 +850,14 @@ p.btn {
   color: #e30000 !important;
 }
 .c {
-  text-align: center !important;
+  text-align: left !important;
+}
+.dai {
+  border-bottom:solid;
+  text-align: left !important;
+}
+.u {
+  text-align: right !important;
 }
 .ws {
   width: 95%;
